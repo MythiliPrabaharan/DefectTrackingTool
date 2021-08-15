@@ -1,0 +1,7 @@
+1) No Scrolling using mouse wheel
+2) Incorrect URL name in the file
+3) Unable to scroll using mouse wheel
+4) ALT+Letter does not work in dialogs
+5) ALT+Letter not working in dialogs
+6) URL name is Incorrect in the file
+7) scrolling using mouse wheel not supported.

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create Project</title>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+<!-- Compiled and minified JavaScript -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+<form action="create_project.jsp" method = "post">
+  <nav>
+    <div class="nav-wrapper blue">
+      <a href="#" class="brand-logo center">PeopleZ Defect Tracking Tool</a>      
+    </div>
+  </nav>
+  <nav>
+         <div class="nav-wrapper">
+            <div class="col s12">
+               <a href="signup.html" class="breadcrumb">Sign Up</a>
+               <a href="login.html" class="breadcrumb">Log In</a>
+               <a href="create_project.html" class="breadcrumb">Create Project</a>
+               &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+               <a href="http://localhost:8080/Sample/home.html" class="btn-floating btn-large tooltipped waves-teal waves-light center" data-position="bottom" data-delay="50" data-tooltip="Log out" onclick='window.alert("Logged Out Successfully");'><i class="material-icons right">account_circle</i></a>
+            </div>
+         </div>
+      </nav>
+  <div class="container">
+    <div class="row"> <!-- Title Card -->
+      <div class="col s8 offset-s2">
+        <div class="card orange">
+          <div class="card-content Black-text">
+            <span class="card-title White-text center">
+            	<font face="cursive" size="5"> Create Project </font>
+            </span>
+          </div>
+        </div>
+      </div>
+      <br/>
+      
+    </div> <!-- Title Card End-->
+
+
+    <div class="row"> <!-- Form Card -->
+      <div class="col s8 offset-s2">
+        <div class="card light-blue">
+          <div class="card-content Black-text">
+            <div class="row">
+              <div class="col s12">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card blue lighten-1">
+                      <div class="card-content">
+                        <span class="card-title White-text">Project Details</span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                      	<i class="material-icons prefix">mode_edit</i>
+                        <input id="project_name" type="text" class="validate" name = "project_name">
+                        <label for="project_name">Project Name</label>
+                      </div>
+                    </div>
+                    <div class="row center">
+                        <button class="btn waves-effect waves-light center" type="submit" name="action">Create Project<i class="material-icons right">input
+                        </i></button>
+                        <button class="btn waves-effect waves-light center" type="reset" name="action">Reset<i class="material-icons right">clear
+                        </i></button>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Materializecss Select-->
+<script>
+  $(document).ready(function()
+  {
+    $('select').material_select();
+  });
+</script>
+<!--AngularJS CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script type="text/javascript">
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+</script>
+</form>
+</body>
+</html>

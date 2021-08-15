@@ -1,0 +1,255 @@
+<html>
+<head>
+ <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper blue">
+			<a href="#" class="brand-logo center">PeopleZ Defect Tracking Tool</a>
+				<ul id="nav-mobile" class="left hide-on-med-and-down">
+					<li><a href="click.html">Click</a></li>
+					<li><a href="badges.html">Link</a></li>
+					<li><a href="collapsible.html">JavaScript</a></li>
+				</ul>
+		</div>
+	</nav>
+    
+	
+	<div class="container">
+    	<div class="row"> <!-- Title Card -->
+        	<div class="col s8 offset-s2">
+        		<div class="card orange">
+           	 		<div class="card-content Black-text">
+              			<span class="card-title White-text"><center>Create Issue</center></span>
+          	 		</div>
+        		</div>
+    	  	</div>
+    	</div> <!-- Title Card End-->
+		<div class="row"> <!-- Form Card -->
+        	<div class="col s8 offset-s2">
+        		<div class="card light-blue">
+            		<div class="card-content Black-text">
+              			<div class="row">
+    						<div class="col s12">
+      				    		<div class="card">
+            						<div class="card-content White-text">
+            							<div class="card blue lighten-1">
+            								<div class="card-content White-text">
+            				    				<span class="card-title White-text">Project</span>
+				            				</div>
+	        							</div>
+				      					<!--<div class="row">
+			      							<div class="input-field col s12">
+          										<input id="last_name" type="text" class="validate">
+          										<label for="last_name">ID</label>
+        					    			</div>
+				        				</div>-->
+        								<div class="row">
+			      							<div class="input-field col s12">
+          										<input id="last_name" type="text" class="validate" name = "project_name">
+          										<label for="last_name">Name</label>
+        					    			</div>
+				        				</div>
+				        			</div>
+        						</div>                        
+                    <!--<div class="card">
+            						<div class="card-content White-text">
+            							<div class="card blue lighten-1">
+            								<div class="card-content White-text">
+            				    				<span class="card-title White-text">Module</span>
+            				    			</div>
+            				    		</div>
+            				    		<div class="row">
+            				    			<div class="input-field col s12">
+          										<input id="last_name" type="text" class="validate">
+          										<label for="last_name">ID</label>
+        					    			</div>
+        					    		</div>
+        					    		<div class="row">
+			      							<div class="input-field col s12">
+          										<input id="last_name" type="text" class="validate">
+          										<label for="last_name">Name</label>
+        					    			</div>
+				        				</div>				        				       				
+        							</div>
+        						</div>-->
+        						<div class="card">
+            					<div class="card-content">
+        								<div class="row">
+        									<div class="card">
+            								<div class="card-content blue lighten-1 ">
+            				    			<span class="card-title White-text">Defect</span>
+					            			</div>
+					            		</div>
+                    			<div class="row">
+                    				<div class="input-field col s12">
+                    					<select name="defect_type">
+          				 		 					<option value="" disabled selected>Select Defect Type</option>
+            								    <option value="1">Documentation</option>
+           				  		 			  <option value="2">Assignment</option>
+            				 	 	  	    <option value="3">Interface</option>
+                                <option value="4">Syntax/Static</option>
+                                <option value="5">Build/Package</option>
+                                <option value="6">Checking</option>
+                                <option value="7">Data</option>
+                                <option value="8">Function</option>
+                                <option value="9">Environment</option>
+                                <option value="10">System</option>
+        						 			    </select>
+	        						 		  </div>
+						    				  </div>
+    	                  </div>
+        			          <!--<div class="row">
+			      							<div class="input-field col s12">
+          									<input id="last_name" type="text" class="validate">
+          									<label for="last_name">ID</label>
+        					    		</div>
+				        				</div>-->
+        								<div class="row">
+			      							<div class="input-field col s12">
+          										<input id="last_name" type="text" class="validate" name="defect_name">
+          										<label for="last_name">Name</label>
+        					    			</div>
+				        				</div>
+                			  <!--<div class="row">
+			      							<div class="input-field col s12">
+          										<input id="last_name" type="text" class="validate">
+          										<label for="last_name">Test Case ID</label>
+        					    			</div>
+				        				</div>-->
+                		    <div class="row">
+                        	<div class="input-field col s12">
+        					  				<textarea id="textarea1" class="materialize-textarea" name="description"></textarea>
+        					  				<label for="textarea1">Description</label>
+       										</div>
+                        </div>
+					    			</div>
+        						</div>
+								    <div class="card">
+            					<div class="card-content Black-text">
+       								  <div class="row">
+											    <div class="card blue lighten-1">
+            								<div class="card-content White-text">
+            				    			<span class="card-title White-text">Other Details</span>
+	            							</div>
+					        				</div>
+			      						  <div class="input-field col s12">                        
+       									    <input type="date" class="datepicker" placeholder="Creation Date" name="date">
+              					  </div>
+										    </div>
+                        <div class="row">
+			      						  <div class="input-field col s12">
+			      							  <select name="priority">
+ 		         				 				  <option value="" disabled selected>Priority</option>
+            									<option value="1">High</option>
+           				  		 			<option value="2">Medium</option>
+            				 	 				<option value="3">Low</option>
+        						 			  </select>
+        						 		  </div>
+					    			    </div>
+                        <div class="row">
+			      						  <div class="input-field col s12">
+			         						  <select name="severity">
+          						 				<option value="" disabled selected>Severity</option>
+            					 				<option value="1">Critical</option>
+           				  					<option value="2">Major</option>
+            				 	 				<option value="3">Moderate</option>
+            				 	 				<option value="4">Minor</option>
+            				 	 				<option value="5">Cosmetic</option>
+        									 </select>
+        					    		</div>
+					    			    </div>                            
+                        <div class="row">
+      									  <div class="input-field col s12">
+         								    <select name="status">
+          				 		 		    <option value="" disabled selected>Status</option>
+            					 		    <option value="1">New</option>
+           				  		 		  <option value="2">Open</option>
+            				 	 		    <option value="3">Assigned</option>
+                              <option value="4">Fix</option>
+                              <option value="5">Retest</option>
+                              <option value="6">Close</option>
+        						 		    </select>
+        					    	  </div>
+					    		     </div>
+            				  <div class="row">
+									      <div class="input-field col s12">
+										      <select name="assigned_to">
+          				 		 		  <option value="" disabled selected>Assigned To</option>
+            					 			<option value="1">Tester 1</option>
+           				  		 		<option value="2">Tester 2</option>
+            				 	 			<option value="3">Test 3</option>
+        						 		  </select>  
+        						 		</div>
+        							</div>
+                      <div class="row">
+            						<div class="input-field col s12">
+             					  	<select name="verfied_by">
+          				 		      <option value="" disabled selected>Verfied By</option>
+             					      <option value="1">Developer 1</option>
+           				  		    <option value="2">Developer 2</option>
+            				 	      <option value="3">Developer 3</option>
+        						      </select>
+        					      </div>
+					            </div>
+                      <!--<div class="row">
+                        <div class="input-field col s12">
+                          <div class="file-field input-field">
+                            <div class="btn teal">
+                              <span>File</span>
+                                <input type="file" name="file_name">
+                            </div>
+                            <div class="file-path-wrapper">
+                              <input class="file-path validate" type="text" placeholder="Upload File" name="file_path">
+                            </div>
+                          </div> 
+                        </div>
+                      </div>-->
+                      <div class="row">
+                        <div class="card-action center">
+                          <button href="#" class="btn" type="submit" name="action">Submit Issue<i class="material-icons right">send</i></button>
+                          <button href="#" class="btn" type="submit" name="action">Add Issue<i class="material-icons left">add</i></button>
+                        </div>
+                      </div>
+                </div>
+                </div>
+            </div>
+  	
+
+
+
+
+</div>
+</div>
+</div><!-- Form Card End -->
+</div><!-- Container close -->
+
+ <!--Materializecss Select-->
+  <script>
+      $(document).ready(function() {
+        $('select').material_select();
+      });
+  </script>
+
+    <!--AngularJS CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+
+<script type="text/javascript">
+	$('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+       
+</script>
+</body>
+</html>
